@@ -8,6 +8,33 @@ body {
     font-family: 'roboto';
     color: var(--main-text);
 }
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato; 
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -16,13 +43,36 @@ body {
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
+    align-items: center;
+    margin-right: 93px;
     } 
-    .site-nav .link {
+.site-nav .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text);
+}
+
+/* nav */
+.site-nav {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.container .nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: o;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -35,11 +85,15 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-text);
 }
+.site-aut {
+    margin-left: auto;
+}
 .site-aut .link:hover,
 .site-aut .link:focus {
     color: var(--active);
 }
 .list {
+    margin-top: 0;
     list-style: none;}
 .link {
     text-decoration: none;
@@ -47,6 +101,11 @@ body {
 .web, .list .current{
     color: var(--active);
 }
+
+.site-aut .link:not(:last-child) {
+    margin-right: 50px;
+}
+
 /* main */
 .hero {
     font-weight: 900;
@@ -61,6 +120,14 @@ body {
     background: var(--footer);
 }
 .hero-btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    border: var(--active);
+    border-radius: 4px;
+
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
